@@ -1,0 +1,25 @@
+---
+
+	
+- name: Socks tunnel setup
+  hosts: "{{ list_host }}" 
+#hosts: all
+  gather_facts: no
+	
+roles:
+  - role: ansible-role-event-socks-tunnel
+    run_once: true 
+  delegate_to: localhost
+	vars:
+	acc_id: "sdv" 
+	transaction_id: "{{ tower_job_id }}"
+	
+  tasks:
+  - name: Delete Vms
+	vmware_guest:
+	hostname: "{{ list_host }}"
+	validate_certs: False
+	name: "{{ item }}"
+	state: absent
+	delegate_to: localhost
+	with_lines: cat vmname.txt
