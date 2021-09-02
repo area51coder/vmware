@@ -5,7 +5,7 @@
 
   tasks:
     - name: Gather fact for all vm
-      vmware_vm_facts:
+      vmware_vm_info:
         hostname: "{{ list_host }}"
         username: "{{ username }}"
         password: "{{ password }}"
