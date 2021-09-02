@@ -1,0 +1,13 @@
+---
+- name: Sock tunnel setup
+  hosts: "{{ list_host }}"
+  gather_facts: false
+
+  tasks:
+    - name: Gather fact for all vm
+      vmware_vm_facts:
+        hostname: "{{ list_host }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        validate_certs: no
+      register: vms
