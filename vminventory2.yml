@@ -11,3 +11,4 @@
         password: "{{ password }}"
         validate_certs: no
       register: vms
+      delegate_to: localhost
