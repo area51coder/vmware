@@ -13,4 +13,4 @@
         proxy_port: 8080
         validate_certs: no
       register: vms
-      #delegate_to: WIN-DQTK4K8NQ55.AREA51.COM
+      delegate_to: localhost
