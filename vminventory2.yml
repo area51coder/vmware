@@ -11,4 +11,4 @@
         password: "{{ password }}"
         validate_certs: no
       register: vms
-      delegate_to: 192.168.29.172
+      delegate_to: WIN-DQTK4K8NQ55.AREA51.COM
