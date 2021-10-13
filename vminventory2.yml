@@ -2,8 +2,9 @@
 - name: Sock tunnel setup
   hosts: "{{ list_host }}"
   gather_facts: false
-  roles:
-    - role: ansible-role-event-socks-tunnel
+  include_role:
+    name: ansible-role-event-socks-tunnel
+
 
   tasks:
     - name: Gather fact for all vm
