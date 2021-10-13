@@ -3,7 +3,7 @@
   hosts: "{{ list_host }}"
   gather_facts: false
   roles:
-	  - role: ansible-role-event-socks-tunnel
+    - role: ansible-role-event-socks-tunnel
 
   tasks:
     - name: Gather fact for all vm
