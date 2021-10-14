@@ -1,6 +1,6 @@
 ---
 - name: Role ensures that the socks tunnel is setup
-  hosts: area51-controller
+  hosts: "{{ list_host }}"
   connection: local
   gather_facts: false
   roles:
