@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.29.186
+- hosts: area51-controller
   gather_facts: no
   tasks:
     - shell: echo Hello `hostname`
