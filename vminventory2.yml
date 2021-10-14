@@ -10,8 +10,8 @@
     - name: Gather fact for all vm
       vmware_vm_info:
         hostname: "{{ list_host }}"
-        username: "{{ username }}"
-        password: "{{ password }}"
+        #username: "{{ username }}"
+        #password: "{{ password }}"
         #proxy_host: 192.168.29.186
         #proxy_port: 3128
         validate_certs: no
