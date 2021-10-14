@@ -16,4 +16,4 @@
         proxy_port: 22
         validate_certs: no
       register: vms
-      delegate_to: localhost
+      #delegate_to: localhost
