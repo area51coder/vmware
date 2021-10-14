@@ -1,6 +1,6 @@
 ---
 - name: Role ensures that the socks tunnel is setup
-  hosts: area51-controller
+  hosts: localhost
   connection: local
   gather_facts: false
   roles:
