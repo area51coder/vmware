@@ -6,7 +6,7 @@
   roles:
     - ansible-role-socks5-tunnel
 
-- hosts: all
+- hosts: "{{ list_host }}"
   gather_facts: no
   tasks:
     - setup:
