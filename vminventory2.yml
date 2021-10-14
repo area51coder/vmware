@@ -13,7 +13,7 @@
         #username: "{{ username }}"
         #password: "{{ password }}"
         proxy_host: 192.168.29.237
-        proxy_port: 22
+        proxy_port: 80
         validate_certs: no
       register: vms
       delegate_to: localhost
