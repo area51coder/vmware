@@ -12,8 +12,8 @@
         hostname: "{{ list_host }}"
         #username: "{{ username }}"
         #password: "{{ password }}"
-        #proxy_host: 192.168.29.186
-        #proxy_port: 3128
+        proxy_host: 192.168.29.237
+        proxy_port: 22
         validate_certs: no
       register: vms
       delegate_to: localhost
