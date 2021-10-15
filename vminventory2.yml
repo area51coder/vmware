@@ -1,7 +1,7 @@
 ---
 - name: Role ensures that the socks tunnel is setup
-  hosts: localhost
-  connection: local
+  hosts: 192.168.29.186
+  #connection: local
   gather_facts: false
   roles:
     - ansible-role-socks5-tunnel-nopassphrase
