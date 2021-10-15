@@ -3,8 +3,8 @@
   hosts: "{{ list_host }}"
   #connection: local
   gather_facts: false
-  #roles:
-  #  - ansible-role-socks5-tunnel-nopassphrase
+  roles:
+    - ansible-role-socks5-tunnel-nopassphrase
 
   tasks:
     - name: Gather fact for all vm
