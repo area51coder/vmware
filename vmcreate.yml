@@ -1,6 +1,6 @@
 ---
 - name: Sock tunnel setup
-  hosts: "{{ list_host }}"
+  hosts: localhost
   gather_facts: false
 
   tasks:
