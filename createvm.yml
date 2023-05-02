@@ -17,7 +17,7 @@
       validate_certs: False
       name: testvm_{{ item }}
       #name: testvm_3
-      #template: vm1
+      template: vm1
       datacenter: "{{ datacenter }}"
       folder: testvms
       state: poweredoff
