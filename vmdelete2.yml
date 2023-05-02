@@ -11,6 +11,6 @@
       password: "{{ vcenter_password }}"
       validate_certs: False
       name: "{{ item }}"
-      state: absent
+      state: present
     delegate_to: localhost
     with_lines: cat vmname.txt
